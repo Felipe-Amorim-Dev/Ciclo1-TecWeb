@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-sm table-hover">
+        <thead>
+            <tr>
+                <th>Projeto Id</th>
+                <th>Usuário Status</th>
+                <th>Usuario Id</th>
+                <th>Projeto Id</th>                                                
+            </tr>
+        </thead>
+        <tbody>
+            @for (usuario of dataUsuario; track usuario){
+            <tr>
+                <td>{{usuario.projeto_usuario_id}}</td>
+                <td>{{usuario.projeto_usuario_status}}</td>
+                <td>{{usuario.usuario_id}}</td>  
+                <td>{{usuario.projeto_id}}</td>                                        
+            </tr>
+        }
+        </tbody>
+    </table>
